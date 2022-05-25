@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Sahel;
+    src: url('Sahel.eot');
+    src: url('Sahel.eot?#iefix') format('embedded-opentype'),
+         url('Sahel.woff2') format('woff2'),
+         url('Sahel.woff') format('woff'),
+         url('Sahel.ttf') format('truetype');
+    
+}
+
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: 'Sahel';
+    font-size: 14px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.navbar-nav{
+    margin-left: initial !important;
+    margin-right: auto;
+}
+
+
+.post-meta {
+    text-align: left;
+}
+
+.post-preview > .post-meta {
+    font-size: 1.00rem;
+    font-style: italic;
+    margin-top: 0;
+    color: #6c757d;
+}
+
+
+.post-preview > a > .post-title {
+    font-size: 1.50rem;
+}
+
+h3, .h3 {
+    font-size: 1.35rem;
+}
+
+.pager-botton {
+    float: left !important;
+}
+
+
+/* styles.css | http://127.0.0.1:8000/static/blog/css/styles.css */
+
+@media (min-width: 992px) {
+    header.masthead .page-heading h1, header.masthead .page-heading .h1, header.masthead .site-heading h1, header.masthead .site-heading .h1 {
+      /* font-size: 5rem; */
+      font-size: 2.1rem;
+    }
+  }
+
+
+li.nav-item > a.nav-link {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+}/*این مربوط به منوهای منه*/
+
+
+.px-lg-3 {
+    padding-right: 1em !important;
+    padding-left: 0rem !important;
+}/*این مربوط به منوهای منه*/
+
+
+
+
+.nav ul {
+    padding-right: 0;
+}
+  
+.nav ul li {
+    border-bottom: none;
+    height:86px;
+    line-height: 86px;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+}
+  
+.nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    transition: .3s background-color;
+    padding:0 24px;
+}
+  
+.nav ul li a:hover {
+    background-color: #5c89c7;
+    color:#FFFFFF;
+}
+  
+.nav a {
+    border-bottom: none;
+  }
+  
+.nav li ul {
+    position: absolute;
+    display:none;
+    width:inherit;
+}
+  
+.nav li:hover ul {
+    display:block;
+}
+  
+.nav ul li ul li {
+    display:block;
+    float:none !important;
+    height: auto;
+    line-height: 34px;
+}
+  
+.nav ul li ul li ul{
+    position: absolute;
+    right: 100%;
+    top: 0;
+    display: none !important;
+}
+  
+.nav ul > li > ul > li:hover > ul {
+    display:block !important;
+}
+  
+.nav ul > li > ul > li > ul > li:hover > ul {
+    display:block !important;
+}
+
+
+  
+
+
+
