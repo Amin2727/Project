@@ -24,7 +24,7 @@
                 <tbody>
                   {% for article in object_list %}
                     <tr>
-                        <td>
+                      <td>
                             {% if article.status == 'd' or user.is_superuser %}
                                 <a href="{% url 'account:article-update' article.pk %}">{{article.title}}</a>
                             {% else %}
@@ -43,7 +43,11 @@
                             {% else %}
                                 <span class="badge badge-danger">پیش نویس</span>
                             {% endif %}
-                        </td>
+
+                            {% if user.is_superuser %}
+                                <a class="badge text-danger" href="{% url 'account:article-delete' article.pk %}">حذف</a>
+                            {% endif %}
+                      </td>
                     </tr>
                   {% endfor %}
                 </tbody>
