@@ -38,10 +38,8 @@ class AuthorAccessMixin():
             raise Http404("You can't see this page!!")
 
 class SuperUserMixin():
-    def dispatch(self, request, pk, *args, **kwargs):
-        article = get_object_or_404(Article,pk=pk)
-        if article.author == request.user and article.status == 'd' or \
-            request.user.is_superuser:
+    def dispatch(self, request,*args, **kwargs):
+        if request.user.is_superuser:
             return super().dispatch(request, *args, **kwargs)
         else:
             raise Http404("You can't see this page!!")
