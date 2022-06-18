@@ -29,7 +29,6 @@
                 <div class="col-6">
                     {{ form.last_name|as_crispy_field }}
                 </div>
-                {% if user.is_superuser %}
                 <div class="col-6">
                     {{ form.special_user|as_crispy_field }}
 
@@ -37,7 +36,6 @@
                 <div class="col-6">
                     {{ form.is_author|as_crispy_field }}
                 </div>
-                 {% endif %}
                 </div>
                 <button class="btn btn-success">ویرایش اطلاعات</button>
             </form>
