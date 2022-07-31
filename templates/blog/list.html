@@ -49,6 +49,10 @@
              </div>
              <!-- Divider-->
              <hr class="my-4" />
+             {% empty %}
+                <div class="alert alert-danger">
+                      متاسفانه محتوایی برای نمایش وجود ندارد برای برگشت روی لینک  <a href="{% url 'blog:home' %}" class="alert-link">بازگشت</a> کلیک کنید...
+                </div>
             {% endfor %}
               <!-- Pager-->
               {% if is_paginated %}

@@ -70,7 +70,7 @@ li.nav-item > a.nav-link {
 
 .px-lg-3 {
     padding-right: 1em !important;
-    padding-left: 0rem !important;
+    padding-left: 2rem !important;
 }/*این مربوط به منوهای منه*/
 
 
@@ -98,7 +98,7 @@ li.nav-item > a.nav-link {
 }
   
 .nav ul li a:hover {
-    background-color: #5c89c7;
+    background-color: #42536b;
     color:#FFFFFF;
 }
   
@@ -130,9 +130,6 @@ li.nav-item > a.nav-link {
     display: none !important;
 }
   
-.nav ul > li > ul > li:hover > ul {
-    display:block !important;
-}
   
 .nav ul > li > ul > li > ul > li:hover > ul {
     display:block !important;
