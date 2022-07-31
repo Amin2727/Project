@@ -1,5 +1,6 @@
 {% extends 'blog/base.html' %}
 {% load static %}
+{% load base_tags %}
 {% block main %}
 <!-- Page Header-->
 <header class="masthead" style="background-image: url('{% static "blog/assets/img/Welcome.jpg" %}')">
@@ -21,7 +22,7 @@
           <div class="col-md-10 col-lg-8 col-xl-7">
             
             {% block header %}{% endblock %}
-
+            {% popular_articles %}
             {% for article in object_list %}
                <!-- Post preview-->
                 <div class="post-preview">
@@ -44,6 +45,7 @@
                    {% endfor %}
                  </div>
                  </p>
+                 <div class="bg bg-info"> بازدیدها:{{article.hits.count}}</div> 
              </div>
              <!-- Divider-->
              <hr class="my-4" />

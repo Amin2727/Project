@@ -138,8 +138,12 @@ li.nav-item > a.nav-link {
     display:block !important;
 }
 
-
-  
-
-
-
+.popular_articles {
+    border: 1px solid #c6a4a4;
+    padding: 15px;
+    border-radius: 5px;
+    width: 240px;
+    position: absolute;
+    left: 10px;
+    box-shadow: -5px 5px #bbabab;
+}

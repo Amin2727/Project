@@ -1,4 +1,5 @@
 {% extends 'blog/base.html' %}
+{% load base_tags %}
 {% block title %} | {{object.title}}{% endblock %}
 {% block main %}
 <!-- Page Header-->
@@ -12,6 +13,7 @@
                       <span class="badge bg-danger"style="font-size:16px">ویژه</span>
                       {% endif %}
                      <time>{{object.jpublish}}</time>
+                     <div> بازدیدها:{{object.hits.count}}</div>   
                      <span class="subheading"></span>
                  </div>
              </div>
@@ -24,6 +26,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
+                      {% popular_articles %}
                       {% if object.is_special %}
                         {% if user.is_authenticated and user.is_special_user or user == object.author or user.is_superuser %}
                           {{object.description | safe}}
