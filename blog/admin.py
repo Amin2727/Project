@@ -4,7 +4,7 @@ from .models import Article, Category
 
 #Admin header change
 
-admin.site.site_header='وبلاگ جنگویی من'
+admin.site.site_header='سایت تجهیزات پزشکی'
 
 
 def make_published(modeladmin, request, queryset):
@@ -13,8 +13,8 @@ def make_published(modeladmin, request, queryset):
          message_bit = "منتشر شد"
      else:
          message_bit = "منتشر شدند" 
-     modeladmin.message_user(request, "{} مقاله {}".format(rows_updated, message_bit))
-make_published.short_description = "انتشار مقالات انتخاب شده"
+     modeladmin.message_user(request, "{} پست {}".format(rows_updated, message_bit))
+make_published.short_description = "انتشار پست های انتخاب شده"
 
 
 def make_draft(modeladmin, request, queryset):
@@ -23,8 +23,8 @@ def make_draft(modeladmin, request, queryset):
          message_bit = "پیش نویس شد"
      else:
          message_bit = "پیش نویس شدند" 
-     modeladmin.message_user(request, "{} مقاله {}".format(rows_updated, message_bit))
-make_draft.short_description = "پیش نویس شدن مقالات انتخاب شده"
+     modeladmin.message_user(request, "{} پست {}".format(rows_updated, message_bit))
+make_draft.short_description = "پیش نویس شدن پست های انتخاب شده"
 
 
 class CategoryAdmin(admin.ModelAdmin):

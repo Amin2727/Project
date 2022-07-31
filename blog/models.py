@@ -43,20 +43,20 @@ class Article(models.Model):
 
     )
     author = models.ForeignKey(User, null=True, on_delete=models.SET_NULL, related_name='articles', verbose_name="نویسنده")
-    title=models.CharField(max_length=200, verbose_name='عنوان مقاله')
-    slug=models.SlugField(max_length=100, unique=True,verbose_name='آدرس مقاله')
+    title=models.CharField(max_length=200, verbose_name='عنوان پست')
+    slug=models.SlugField(max_length=100, unique=True,verbose_name='آدرس پست')
     category=models.ManyToManyField(Category, verbose_name="دسته بندی", related_name="articles")
     description=models.TextField(verbose_name='محتوا')
-    thumbnail=models.ImageField(upload_to="images",verbose_name='تصویر مقاله')
+    thumbnail=models.ImageField(upload_to="images",verbose_name='تصویر پست')
     publish=models.DateTimeField(default=timezone.now,verbose_name='زمان انتشار')
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now=True)
-    is_special=models.BooleanField(default=False,verbose_name='مقاله ی ویژه')
+    is_special=models.BooleanField(default=False,verbose_name='پست ویژه')
     status=models.CharField(max_length=1, choices=STATUS_CHOICES,verbose_name='وضعیت')
     
     class Meta:
-        verbose_name = "مقاله"
-        verbose_name_plural = "مقالات"
+        verbose_name = "پست"
+        verbose_name_plural = "پست ها"
         ordering=['-publish']
 
     def __str__(self):
@@ -73,7 +73,7 @@ class Article(models.Model):
 
     def thumbnail_tag(self):
         return format_html("<img width=100 height=75 style = 'border-radius: 13px'; src='{}'>".format(self.thumbnail.url))    
-    thumbnail_tag.short_description = "عکس مقاله"
+    thumbnail_tag.short_description = "عکس پست"
 
     def category_to_str(self):
         return ", ".join([category.title for category in self.category.active()])

@@ -1,8 +1,9 @@
 {% extends 'registration/base.html' %}
 {% load crispy_forms_tags %}
+HTML("{% load django_tables2 %}{% render_table events %}")
 
 {% block title %}{% block title-meta %}
-    لیست مقالات
+    لیست پست ها
 {% endblock %}{% endblock %}
 
 {% block main %}
@@ -10,7 +11,7 @@
     <!-- general form elements -->
     <div class="card card-primary">
       <div class="card-header">
-        <h3 class="card-title mb-0 float-left">افزودن مقاله</h3>
+        <h3 class="card-title mb-0 float-left">افزودن پست</h3>
       </div>
 
         <div class="card-body">
@@ -62,7 +63,7 @@
                     {{ form.is_special|as_crispy_field }}
                  </div>
                 </div>
-                <button class="btn btn-success">ارسال مقاله</button>
+                <button class="btn btn-success">ارسال پست</button>
             </form>
         </div>
 </div>
