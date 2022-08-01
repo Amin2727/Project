@@ -5,10 +5,6 @@ from datetime import datetime, timedelta
 
 register = template.Library()
 
-@register.simple_tag
-def title():
-    return "سایت تجهیزات پزشکی"
-
 
 @register.inclusion_tag("blog/partials/category_navbar.html")
 def category_navbar():
