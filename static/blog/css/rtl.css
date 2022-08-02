@@ -2,8 +2,7 @@ body{
     direction: rtl;
     text-align: right;
     font-family: 'Sahel';
-    font-size: 14px;
-    
+    font-size: 15px;
 }
 
 h1{
@@ -13,6 +12,7 @@ h1{
 .navbar-nav{
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: -40px;
 }
 
 
@@ -39,16 +39,6 @@ h3, .h3 {
 .pager-botton {
     float: left !important;
 }
-
-
-/* styles.css | http://127.0.0.1:8000/static/blog/css/styles.css */
-
-@media (min-width: 992px) {
-    header.masthead .page-heading h1, header.masthead .page-heading .h1, header.masthead .site-heading h1, header.masthead .site-heading .h1 {
-      /* font-size: 5rem; */
-      font-size: 2.1rem;
-    }
-  }
 
 /*این مربوط به منوهای منه*/
 li.nav-item > a.nav-link {
@@ -89,8 +79,8 @@ li.nav-item > a.nav-link {
 }
   
 .nav ul li a:hover {
-    background-color: #42536b;
-    color:#FFFFFF;
+    background-color: #425877;
+    color:#e4d3d3;
 }
   
 .nav a {
@@ -139,25 +129,11 @@ li.nav-item > a.nav-link {
     box-shadow: -5px 5px #bbabab;
 }
 
-/*  This is for footer's icons */
+/*  برای آیکون های فوتر */
 .fa:hover {
     opacity: 0.9;
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa-pinterest {
-    background: #cb2027;
-    color: white;
-}
-
-.fa-reddit {
-    background: #ff5700;
-    color: white;
-}
 
 .fa {
     padding: 20px;
@@ -165,11 +141,8 @@ li.nav-item > a.nav-link {
     width: 60px;
     text-decoration: none;
     margin: 5px 5px;
-}
+}/*  برای آیکون های فوتر */
 
-h1 {
-    color: rgb(239, 245, 239);
-}/*  This is for footer's icons */
 
 /* برای سرچ باکس */
 button {
@@ -180,8 +153,10 @@ button {
 header.masthead {
     padding-top: 23.5rem;
     padding-bottom: 5.5rem;
-  }
+  }/* برای سرچ باکس */
 
+
+/* برای فوتر */
 .Jumbotron{
     font-family: 'Sahel';
     font-size: 14pt;
@@ -200,4 +175,4 @@ header.masthead {
 .fa {
     border-color: black !important;
     border-width: 1px !important;
-  }
+  }/* برای فوتر */
