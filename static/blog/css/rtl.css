@@ -3,6 +3,7 @@ body{
     text-align: right;
     font-family: 'Sahel';
     font-size: 14px;
+    
 }
 
 h1{
@@ -177,7 +178,26 @@ button {
 }
 
 header.masthead {
-    padding-top: 6.5rem;
-    padding-bottom: 6.5rem;
+    padding-top: 23.5rem;
+    padding-bottom: 5.5rem;
   }
 
+.Jumbotron{
+    font-family: 'Sahel';
+    font-size: 14pt;
+    background-color: rgb(36, 36, 240);
+}
+
+.h2{
+    font-family: 'Sahel';
+    color:rgb(252, 89, 14);
+}
+
+.card{
+    background-color: rgb(85, 205, 241);
+}
+
+.fa {
+    border-color: black !important;
+    border-width: 1px !important;
+  }
