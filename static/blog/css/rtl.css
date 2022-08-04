@@ -2,7 +2,8 @@ body{
     direction: rtl;
     text-align: right;
     font-family: 'Sahel';
-    font-size: 15px;
+    font-size: 16.5px;
+    
 }
 
 h1{
@@ -12,7 +13,7 @@ h1{
 .navbar-nav{
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: -40px;
+    margin-top:-40px;
 }
 
 
@@ -29,16 +30,22 @@ h1{
 
 
 .post-preview > a > .post-title {
-    font-size: 1.50rem;
+    font-size: 1.20rem;
 }
 
 h3, .h3 {
-    font-size: 1.35rem;
+    font-size: 1.20rem;
 }
 
 .pager-botton {
     float: left !important;
+    margin-bottom: 14px;
 }
+
+
+.col-md-10.col-lg-8.col-xl-7 {
+    width: 100%;
+  }
 
 /*این مربوط به منوهای منه*/
 li.nav-item > a.nav-link {
@@ -79,8 +86,8 @@ li.nav-item > a.nav-link {
 }
   
 .nav ul li a:hover {
-    background-color: #425877;
-    color:#e4d3d3;
+    background-color: #42536b;
+    color:#FFFFFF;
 }
   
 .nav a {
@@ -129,11 +136,6 @@ li.nav-item > a.nav-link {
     box-shadow: -5px 5px #bbabab;
 }
 
-/*  برای آیکون های فوتر */
-.fa:hover {
-    opacity: 0.9;
-}
-
 
 .fa {
     padding: 20px;
@@ -141,8 +143,11 @@ li.nav-item > a.nav-link {
     width: 60px;
     text-decoration: none;
     margin: 5px 5px;
-}/*  برای آیکون های فوتر */
+}
 
+h1 {
+    color: rgb(239, 245, 239);
+}/*  This is for footer's icons */
 
 /* برای سرچ باکس */
 button {
@@ -153,10 +158,8 @@ button {
 header.masthead {
     padding-top: 23.5rem;
     padding-bottom: 5.5rem;
-  }/* برای سرچ باکس */
+  }
 
-
-/* برای فوتر */
 .Jumbotron{
     font-family: 'Sahel';
     font-size: 14pt;
@@ -175,4 +178,4 @@ header.masthead {
 .fa {
     border-color: black !important;
     border-width: 1px !important;
-  }/* برای فوتر */
+  }

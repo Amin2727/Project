@@ -16,10 +16,15 @@ class CategoryManager(models.Manager):
         return self.filter(status=True)
 
 
-# Create your models here.
+
 class IPAddress(models.Model):
     ip_address = models.GenericIPAddressField(verbose_name="آدرس آی پی")
 
+    class Meta:
+        verbose_name = "آدرس آی پی"
+        verbose_name_plural = "آدرس آی پی ها"
+
+        
 class Category(models.Model):
     parent=models.ForeignKey('self', default=None, null=True, blank=True, on_delete=models.SET_NULL, related_name='children', verbose_name='زیر دسته')
     title=models.CharField(max_length=200, verbose_name='دسته بندی عناوین')

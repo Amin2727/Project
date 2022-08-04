@@ -13,15 +13,6 @@ def category_navbar():
     }
 
 
-@register.inclusion_tag("blog/partials/popular_articles.html")
-def popular_articles():
-    last_month = datetime.today() - timedelta(days=30)
-    return {
-        "popular_articles": Article.objects.published().annotate(
-            count=Count('hits', filter=Q(articlehit__created=last_month))
-    ).order_by('-count', '-publish')
-    }
-
 
 
 @register.inclusion_tag("registration/partials/link.html")

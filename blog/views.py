@@ -9,7 +9,7 @@ from django.db.models import Q
 
 class ArticleList(ListView):
     queryset = Article.objects.published()
-    paginate_by = 5
+    paginate_by = 10
 
 
 
@@ -48,7 +48,7 @@ class CategoryList(ListView):
 
 
 class AuthorList(ListView):
-    paginate_by = 5
+    paginate_by = 10
     template_name = 'blog/author_list.html'
     
     def get_queryset(self):

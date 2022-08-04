@@ -3,17 +3,17 @@
 {% block title %} | {{object.title}}{% endblock %}
 {% block main %}
 <!-- Page Header-->
- <header class="masthead" style="background-image: url('{{article.thumbnail.url}}'); padding-top: 17.5rem;padding-bottom: 5.5rem;">
+ <header class="masthead" style="background-image: url('{{article.thumbnail.url}}');padding-top: 15.5rem;padding-bottom: 5.5rem;">
      <div class="container position-relative px-4 px-lg-5">
          <div class="row gx-4 gx-lg-5 justify-content-center">
              <div class="col-md-10 col-lg-8 col-xl-7">
                  <div class="site-heading">
-                     <h1 style="font-size: 2rem;">{{object.title}}</h1>
+                     <h1 style="font-size: 2.1rem;">{{object.title}}</h1>
                      <time>{{object.jpublish}}</time>
-                     <div> بازدیدها:{{object.hits.count}}</div>  
-                     {% if article.is_special %} 
+                     <div> بازدیدها:{{object.hits.count}}</div>   
+                      {% if article.is_special %} 
                         <span class="badge bg-danger"style="font-size:16px">ویژه</span>
-                     {% endif %} 
+                      {% endif %}
                      <span class="subheading"></span>
                  </div>
              </div>
@@ -24,14 +24,14 @@
     <!-- Post Content-->
         <article class="mb-4">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center" style="border-style: ridge; background-color: rgb(231, 251, 255);">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                       {% if object.is_special %}
                         {% if user.is_authenticated and user.is_special_user or user == object.author or user.is_superuser %}
                           {{object.description | safe}}
                         {% else %}
-                            {{article.description | striptags | truncatewords:30}}
-                          <p class="alert alert-warning">شما کاربر ویژه نیستید، برای کاربر ویژه شدن باید به ادمین های سایت اطلاع دهید تا قادر به دیدن این پست باشید. از این <a class="alert-link" href="{% url 'blog:home' %}"> لینک </a> به صفحه ی اصلی برگردید. </p>
+                            {{article.description | striptags | truncatewords:140}}
+                          <p class="alert alert-warning">این پست ویژه است و برای مشاهده ی آن باید به ادمین های سایت خبر دهید بر روی<a class="alert-link" href="{% url 'blog:home' %}"> بازگشت </a> کلیک کنید </p>
                         {% endif %}
                       {% else %}
                        {{object.description | safe}}
