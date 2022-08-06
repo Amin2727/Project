@@ -6,6 +6,13 @@ body{
     
 }
 
+.alert{
+    width:60%;
+}
+.alert.alert-primary.text-center {
+    margin-right: 200px;
+  }
+
 h1{
     font-size: 3rem;
 }
@@ -24,10 +31,15 @@ h1{
 .post-preview > .post-meta {
     font-size: 1.00rem;
     font-style: italic;
-    margin-top: 0;
+    margin-top: 40px;
     color: #6c757d;
 }
 
+.post-preview{
+    border:3px groove rgb(19, 19, 156);
+    outline: 3px solid blueviolet;
+    padding:19px;
+}
 
 .post-preview > a > .post-title {
     font-size: 1.20rem;
@@ -46,6 +58,18 @@ h3, .h3 {
 .col-md-10.col-lg-8.col-xl-7 {
     width: 100%;
   }
+
+.mb-4 {
+    margin-bottom: 4.5rem !important;
+    margin-top: 4.5rem;
+    border:3px groove rgb(19, 19, 156);
+    outline: 3px solid blueviolet;
+    margin:40px;
+  }
+
+.SVG{
+    enable-background:new 0 0 352.62 352.62
+}
 
 /*این مربوط به منوهای منه*/
 li.nav-item > a.nav-link {

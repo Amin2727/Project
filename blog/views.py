@@ -9,7 +9,7 @@ from django.db.models import Q
 
 class ArticleList(ListView):
     queryset = Article.objects.published()
-    paginate_by = 10
+    paginate_by = 5
 
 
 
