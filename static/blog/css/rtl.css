@@ -6,12 +6,28 @@ body{
     
 }
 
+.search {
+    margin-right: 220px;
+}
+
+
 .alert{
     width:60%;
 }
+
 .alert.alert-primary.text-center {
     margin-right: 200px;
+}
+
+.btn {
+    letter-spacing: 0.0625em;
+    margin-right: 30px;
   }
+
+
+.vizhe {
+    width: 68%;
+}
 
 h1{
     font-size: 3rem;
@@ -32,7 +48,7 @@ h1{
     font-size: 1.00rem;
     font-style: italic;
     margin-top: 40px;
-    color: #6c757d;
+    width:100%;
 }
 
 .post-preview{
@@ -60,11 +76,12 @@ h3, .h3 {
   }
 
 .mb-4 {
-    margin-bottom: 4.5rem !important;
+    margin-bottom: 2.5rem !important;
     margin-top: 4.5rem;
     border:3px groove rgb(19, 19, 156);
     outline: 3px solid blueviolet;
     margin:40px;
+    background-color: rgb(206, 224, 223);
   }
 
 .SVG{
@@ -103,14 +120,14 @@ li.nav-item > a.nav-link {
   
 .nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color:black;
     display: block;
     transition: .3s background-color;
     padding:0 24px;
 }
   
 .nav ul li a:hover {
-    background-color: #42536b;
+    background-color: #41536d;
     color:#FFFFFF;
 }
   
@@ -148,21 +165,10 @@ li.nav-item > a.nav-link {
 }/*این مربوط به منوهای منه*/
 
 
-
-/* برای پست های پر بازدید ماه */
-.popular_articles {
-    border: 1px solid #c6a4a4;
-    padding: 15px;
-    border-radius: 5px;
-    width: 240px;
-    position: absolute;
-    left: 10px;
-    box-shadow: -5px 5px #bbabab;
-}
-
-
 .fa {
     padding: 20px;
+    border-color: black !important;
+    border-width: 1px !important;
     font-size: 40px;
     width: 60px;
     text-decoration: none;
@@ -199,7 +205,3 @@ header.masthead {
     background-color: rgb(85, 205, 241);
 }
 
-.fa {
-    border-color: black !important;
-    border-width: 1px !important;
-  }

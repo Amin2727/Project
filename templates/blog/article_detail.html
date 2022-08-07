@@ -32,7 +32,7 @@
                           {{object.description | safe}}
                         {% else %}
                             {{article.description | striptags | truncatewords:140}}
-                          <p class="alert alert-warning">این پست ویژه است و برای مشاهده ی آن باید به ادمین های سایت خبر دهید بر روی<a class="alert-link" href="{% url 'blog:home' %}"> بازگشت </a> کلیک کنید </p>
+                          <p class="vizhe alert alert-warning">این پست ویژه است و برای مشاهده ی آن باید به ادمین های سایت خبر دهید بر روی<a class="alert-link" href="{% url 'blog:home' %}"> بازگشت </a> کلیک کنید </p>
                         {% endif %}
                       {% else %}
                        {{object.description | safe}}
