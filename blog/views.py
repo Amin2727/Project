@@ -1,16 +1,23 @@
 from django.views.generic import ListView, DetailView
 from account.models import User 
-from django.core.paginator import Paginator
 from account.mixins import AuthorAccessMixin
 from django.shortcuts import get_object_or_404
 from .models import Article, Category
-from django.db.models import Q
+from django.db.models import Count ,Q
+from datetime import datetime, timedelta
 
 
 class ArticleList(ListView):
     queryset = Article.objects.published()
     paginate_by = 5
 
+    def get_context_data(self, **kwargs):
+       context = super().get_context_data(**kwargs)
+       last_month =  datetime.today() - timedelta(days=30)
+       context['popular_articles'] = Article.objects.published().annotate(
+        count = Count('hits', filter=Q(articlehit__created__gt=last_month))
+       ).order_by('-count', '-publish')[:5]
+       return context
 
 
 class ArticleDetail(DetailView):
@@ -32,7 +39,7 @@ class Articlepreview(AuthorAccessMixin,DetailView):
 
 
 class CategoryList(ListView):
-    paginate_by = 5
+    paginate_by = 10
     template_name = 'blog/category_list.html'
     
     def get_queryset(self):
@@ -64,7 +71,7 @@ class AuthorList(ListView):
 
 
 class SearchList(ListView):
-    paginate_by = 1
+    paginate_by = 5
     template_name = 'blog/search_list.html'
     
     def get_queryset(self):

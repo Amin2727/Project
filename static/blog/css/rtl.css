@@ -29,6 +29,11 @@ body{
     width: 68%;
 }
 
+.popular_articles.alert.alert-primary {
+    width: 80%;
+    margin-right: 120px;
+}
+
 h1{
     font-size: 3rem;
 }
@@ -76,8 +81,8 @@ h3, .h3 {
   }
 
 .mb-4 {
-    margin-bottom: 2.5rem !important;
-    margin-top: 4.5rem;
+    margin-top: 6.5rem !important;
+    margin-bottom: 6.5rem !important;
     border:3px groove rgb(19, 19, 156);
     outline: 3px solid blueviolet;
     margin:40px;
