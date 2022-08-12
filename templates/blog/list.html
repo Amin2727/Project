@@ -40,13 +40,13 @@
                     </h2>
                     <h3 class="post-subtitle">{{article.description | striptags | truncatewords:140}}</h3>
                  </a>
-                 <p class="post-meta text text-dark">
+                 <p class="post-meta text-dark bg-info">
                      نوشته شده توسط
-                     <a href="{% url 'blog:author' article.author %}">{{article.author.get_full_name}}</a>
+                     <a href="{% url 'blog:author' article.author %}" style="color:blue">{{article.author.get_full_name}}</a>
                     {{article.jpublish}}
                  <div>
                    {% for cat in article.category.active %}
-                     <a href="{% url 'blog:category' cat.slug %}">دسته بندی: #{{cat.title}}</a>
+                     <a href="{% url 'blog:category' cat.slug %}" style="color:blue">دسته بندی: #{{cat.title}}</a>
                    {% endfor %}
                  </div>
                  </p>
@@ -73,14 +73,5 @@
           </div>
       </div>
   </div>
-   <div class="popular_articles alert alert-primary">
-    <h3>پست های پر بازدید ماه</h3>
-        <details>
-          <summary>کلیک کنید</summary>
-          {% for a in popular_articles %}
-            <div><a href="{% url 'blog:detail' a.slug %}"> {{a.title}} </div></a>
-          {% endfor %}
-        </details>
-   </div>
   
 {% endblock %}

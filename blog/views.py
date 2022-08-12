@@ -16,7 +16,7 @@ class ArticleList(ListView):
        last_month =  datetime.today() - timedelta(days=30)
        context['popular_articles'] = Article.objects.published().annotate(
         count = Count('hits', filter=Q(articlehit__created__gt=last_month))
-       ).order_by('-count', '-publish')[:5]
+       ).order_by('-count', '-publish')[:10]
        return context
 
 

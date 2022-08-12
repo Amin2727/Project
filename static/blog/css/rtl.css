@@ -15,6 +15,14 @@ body{
     width:60%;
 }
 
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    margin-right: 220px;
+}
+
+
 .alert.alert-primary.text-center {
     margin-right: 200px;
 }
@@ -27,11 +35,12 @@ body{
 
 .vizhe {
     width: 68%;
+    margin-right: 170px;
 }
 
 .popular_articles.alert.alert-primary {
-    width: 80%;
-    margin-right: 120px;
+    width: 100%;
+    margin-right: -2px;
 }
 
 h1{
@@ -45,15 +54,13 @@ h1{
 }
 
 
-.post-meta {
-    text-align: left;
-}
-
 .post-preview > .post-meta {
+    width:100%;
+    margin-top: 40px;
+    text-align: left;
     font-size: 1.00rem;
     font-style: italic;
-    margin-top: 40px;
-    width:100%;
+    border:1px dashed whitesmoke;
 }
 
 .post-preview{
