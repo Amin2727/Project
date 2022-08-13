@@ -46,7 +46,7 @@
                     {{article.jpublish}}
                  <div>
                    {% for cat in article.category.active %}
-                     <a href="{% url 'blog:category' cat.slug %}" style="color:blue">دسته بندی: #{{cat.title}}</a>
+                     <a href="{% url 'blog:category' cat.slug %}" style="color:#0000ff">دسته بندی: #{{cat.title}}</a>
                    {% endfor %}
                  </div>
                  </p>

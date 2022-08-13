@@ -24,7 +24,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    {% for article in object_list %}
+                     {% for article in object_list %}
                         <tr>
                         <td>
                                 {% if article.status in 'bd'|make_list or user.is_superuser %}
@@ -40,9 +40,9 @@
                             <td>{{article.jpublish}}</td>
                             <td>
                                 {% if article.is_special %}
-                                    <i class="fa fa-check-circle" style="color:green"></i>
+                                    <i class="fa fa-check-circle" style="color:#008000"></i>
                                 {% else %}
-                                    <i class="fa fa-minus-circle" style="color:red"></i>
+                                    <i class="fa fa-minus-circle" style="color:#ff0000"></i>
                                 {% endif %}
                             </td>
                             <td>
@@ -69,7 +69,7 @@
                                 {% endif %}
                         </td>
                         </tr>
-                    {% endfor %}
+                     {% endfor %}
                     </tbody>
                 </table>
                 </div>

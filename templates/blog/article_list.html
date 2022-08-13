@@ -6,7 +6,7 @@
         <details>
           <summary>کلیک کنید</summary>
           {% for a in popular_articles %}
-            <div><a href="{% url 'blog:detail' a.slug %}" style="color:blue"> {{a.title}} </div></a>
+            <div><a href="{% url 'blog:detail' a.slug %}" style="color:#0000ff"> {{a.title}} </div></a>
           {% endfor %}
         </details>
   </div>

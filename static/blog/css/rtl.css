@@ -1,3 +1,23 @@
+/* @font-face {
+    font-family: Sahel;
+    src: url('Sahel.eot');
+    src: url('Sahel.eot?#iefix') format('embedded-opentype'),
+         url('Sahel.woff2') format('woff2'),
+         url('Sahel.woff') format('woff'),
+         url('Sahel.ttf') format('truetype');
+  } */
+
+@font-face {
+    font-family: Sahel;
+    src: url('Sahel-Bold.eot');
+    src: url('Sahel-Bold.eot?#iefix') format('embedded-opentype'),
+         url('Sahel-Bold.woff2') format('woff2'),
+         url('Sahel-Bold.woff') format('woff'),
+         url('Sahel-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+
+/* تنظیمات عمومی */
 body{
     direction: rtl;
     text-align: right;
@@ -60,12 +80,12 @@ h1{
     text-align: left;
     font-size: 1.00rem;
     font-style: italic;
-    border:1px dashed whitesmoke;
+    border:1px dashed #f5f5f5;
 }
 
 .post-preview{
-    border:3px groove rgb(19, 19, 156);
-    outline: 3px solid blueviolet;
+    border:3px groove #13139c;
+    outline: 3px solid #8a2be2;
     padding:19px;
 }
 
@@ -85,20 +105,23 @@ h3, .h3 {
 
 .col-md-10.col-lg-8.col-xl-7 {
     width: 100%;
+    margin-top: 22px;
   }
 
 .mb-4 {
     margin-top: 6.5rem !important;
     margin-bottom: 6.5rem !important;
-    border:3px groove rgb(19, 19, 156);
-    outline: 3px solid blueviolet;
+    border:3px groove #13139c;
+    outline: 3px solid #8a2be2;
     margin:40px;
-    background-color: rgb(206, 224, 223);
+    background-color: #cee0df;
   }
 
 .SVG{
     enable-background:new 0 0 352.62 352.62
 }
+/* تنظیمات عمومی */
+
 
 /*این مربوط به منوهای منه*/
 li.nav-item > a.nav-link {
@@ -113,8 +136,6 @@ li.nav-item > a.nav-link {
     padding-right: 1em !important;
     padding-left: 2rem !important;
 } 
-
-
 
 
 .nav ul {
@@ -132,7 +153,7 @@ li.nav-item > a.nav-link {
   
 .nav ul li a {
     text-decoration: none;
-    color:black;
+    color:#000000;
     display: block;
     transition: .3s background-color;
     padding:0 24px;
@@ -179,7 +200,7 @@ li.nav-item > a.nav-link {
 
 .fa {
     padding: 20px;
-    border-color: black !important;
+    border-color: #000000 !important;
     border-width: 1px !important;
     font-size: 40px;
     width: 60px;
@@ -188,7 +209,7 @@ li.nav-item > a.nav-link {
 }
 
 h1 {
-    color: rgb(239, 245, 239);
+    color: #eff5ef;
 }/*  This is for footer's icons */
 
 /* برای سرچ باکس */
@@ -201,19 +222,21 @@ header.masthead {
     padding-top: 23.5rem;
     padding-bottom: 5.5rem;
   }
+/* برای سرچ باکس */
 
+/* برای فوتر صفحه */
 .Jumbotron{
     font-family: 'Sahel';
     font-size: 14pt;
-    background-color: rgb(36, 36, 240);
+    background-color: #05445E;
 }
 
 .h2{
     font-family: 'Sahel';
-    color:rgb(252, 89, 14);
+    color:#fc590e;
 }
 
 .card{
-    background-color: rgb(85, 205, 241);
+    background-color: #8AF3FA;
 }
-
+/* برای فوتر صفحه */
