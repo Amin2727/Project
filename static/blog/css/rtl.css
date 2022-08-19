@@ -84,7 +84,7 @@ h1{
 }
 
 .post-preview{
-    border:3px groove #13139c;
+    border:1px groove #13139c;
     outline: 3px solid #8a2be2;
     padding:19px;
 }
@@ -129,11 +129,12 @@ li.nav-item > a.nav-link {
     font-weight: 800;
     letter-spacing: 0.0625em;
     text-transform: uppercase;
+    
 }
 
 
 .px-lg-3 {
-    padding-right: 1em !important;
+    padding-right: 1rem !important;
     padding-left: 2rem !important;
 } 
 
@@ -145,8 +146,8 @@ li.nav-item > a.nav-link {
 .nav ul li {
     border-bottom: none;
     height:86px;
-    line-height: 86px;
-    font-size: 14px;
+    line-height: 60px;
+    font-size: 16.5px;
     display: inline-block;
     margin: 0 auto;
 }
@@ -159,10 +160,7 @@ li.nav-item > a.nav-link {
     padding:0 24px;
 }
   
-.nav ul li a:hover {
-    background-color: #41536d;
-    color:#FFFFFF;
-}
+
   
 .nav a {
     border-bottom: none;
@@ -237,7 +235,7 @@ header.masthead {
 }
 
 .card{
-    background-color: #8AF3FA;
+    background-color: #cbe4e9;
 }
 /* برای فوتر صفحه */
 
