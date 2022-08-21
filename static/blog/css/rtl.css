@@ -1,13 +1,13 @@
-/* @font-face {
+@font-face {
     font-family: Sahel;
     src: url('Sahel.eot');
     src: url('Sahel.eot?#iefix') format('embedded-opentype'),
          url('Sahel.woff2') format('woff2'),
          url('Sahel.woff') format('woff'),
          url('Sahel.ttf') format('truetype');
-  } */
+  }
 
-@font-face {
+/* @font-face {
     font-family: Sahel;
     src: url('Sahel-Bold.eot');
     src: url('Sahel-Bold.eot?#iefix') format('embedded-opentype'),
@@ -15,7 +15,7 @@
          url('Sahel-Bold.woff') format('woff'),
          url('Sahel-Bold.ttf') format('truetype');
     font-weight: bold;
-  }
+  } */
 
 /* تنظیمات عمومی سایت*/
 body{
@@ -33,6 +33,7 @@ body{
 
 .alert{
     width:60%;
+    font-family: 'Sahel Black FD-WOL';
 }
 
 .alert-danger {
@@ -73,6 +74,9 @@ h1{
     margin-top:-40px;
 }
 
+.post-subtitle {
+    font-family: 'Sahel Black FD-WOL';
+}
 
 .post-preview > .post-meta {
     width:100%;
@@ -87,10 +91,12 @@ h1{
     border:1px groove #13139c;
     outline: 3px solid #8a2be2;
     padding:19px;
+    font-family: 'Sahel Black FD-WOL';
 }
 
 .post-preview > a > .post-title {
     font-size: 1.20rem;
+    font-family: 'Sahel Black FD-WOL';
 }
 
 h3, .h3 {
@@ -114,7 +120,6 @@ h3, .h3 {
     border:3px groove #13139c;
     outline: 3px solid #8a2be2;
     margin:40px;
-    background-color: #cee0df;
   }
 
 .SVG{
@@ -129,6 +134,7 @@ li.nav-item > a.nav-link {
     font-weight: 800;
     letter-spacing: 0.0625em;
     text-transform: uppercase;
+    font-family: 'Sahel SemiBold';
     
 }
 
@@ -193,7 +199,13 @@ li.nav-item > a.nav-link {
   
 .nav ul > li > ul > li > ul > li:hover > ul {
     display:block !important;
-}/*این مربوط به منوهای منه*/
+}
+
+.form {
+    margin: -5px 10px auto;
+}
+
+/*این مربوط به منوهای منه*/
 
 
 .fa {

@@ -15,9 +15,8 @@
           {% endif %}
         {% endfor %}
     </ul>
-
-    <form id="form" action="{% url 'blog:search' %}"> 
-      <input type="search" id="query" class="form-control" name="q" placeholder="جستجو...">
-      <button class="btn btn-success" style="padding:8px; border-radius: 3px; margin-right: 15px; margin-top:4px">پیدا کن</button>
+    <form class="form-inline mt-3" action="{% url 'blog:search' %}"> 
+      <input type="search" id="query" style="border-radius:8px; font-family: Sahel Black FD-WOL;" class="form-control" name="q" placeholder="جستجو...">
+      <button class="btn btn-success" style="padding: 8px; border-radius: 5px; margin-top: 3px; font-family: Sahel Black FD-WOL;">پیدا کن</button>
     </form>
 </div>
