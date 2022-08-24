@@ -23,7 +23,7 @@
             {% block header %}{% endblock %}
             {% for article in object_list %}
                <!-- Post preview-->
-                <div class="post-preview" style="background-image: url('{% static "blog/assets/img/mountain.jpg" %}')">
+                <div class="post-preview" style="background-image: url('{% static "blog/assets/img/mountain2.jpg" %}')">
                  <a href="{% url 'blog:detail' article.slug %}">
                     <h2 class="post-title">
                       <span>
@@ -50,7 +50,7 @@
                    {% endfor %}
                  </div>
                  </p>
-                 <div class="alert alert-dark"> بازدیدها:{{article.hits.count}}</div> 
+                 <div class="bazdid alert alert-dark"> بازدیدها:{{article.hits.count}}</div> 
              </div>
              <!-- Divider-->
              <hr class="my-4" />

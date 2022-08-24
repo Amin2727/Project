@@ -31,8 +31,7 @@ body{
 }
 
 
-.alert{
-    width:60%;
+.bazdid, .alert.alert-primary.text-center{
     font-family: 'Sahel Black FD-WOL';
 }
 
@@ -44,10 +43,6 @@ body{
 }
 
 
-.alert.alert-primary.text-center {
-    margin-right: 200px;
-}
-
 .btn {
     letter-spacing: 0.0625em;
     margin-right: 30px;
@@ -56,7 +51,6 @@ body{
 
 .vizhe {
     width: 68%;
-    margin-right: 170px;
 }
 
 .popular_articles.alert.alert-primary {
@@ -76,6 +70,7 @@ h1{
 
 .post-subtitle {
     font-family: 'Sahel Black FD-WOL';
+    color:#032635;
 }
 
 .post-preview > .post-meta {
@@ -97,6 +92,7 @@ h1{
 .post-preview > a > .post-title {
     font-size: 1.20rem;
     font-family: 'Sahel Black FD-WOL';
+    color:#2e0b25;
 }
 
 h3, .h3 {
@@ -134,8 +130,12 @@ li.nav-item > a.nav-link {
     font-weight: 800;
     letter-spacing: 0.0625em;
     text-transform: uppercase;
-    font-family: 'Sahel SemiBold';
     
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link {
+    font-family: 'Sahel Black FD-WOL';
+    color:#081516;
 }
 
 
