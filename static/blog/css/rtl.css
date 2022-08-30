@@ -7,6 +7,7 @@
          url('Sahel.ttf') format('truetype');
   }
 
+
 /* @font-face {
     font-family: Sahel;
     src: url('Sahel-Bold.eot');
@@ -27,19 +28,18 @@ body{
 }
 
 .search {
-    margin-right: 220px;
+    margin-right: 90px;
+    font-family: 'Vazirmatn RD Black';
 }
 
 
-.bazdid, .alert.alert-primary.text-center{
-    font-family: 'Sahel Black FD-WOL';
-}
 
 .alert-danger {
     color: #842029;
+    font-family: 'Vazirmatn RD Black';
     background-color: #f8d7da;
     border-color: #f5c2c7;
-    margin-right: 220px;
+    margin-right: 90px;
 }
 
 
@@ -50,7 +50,7 @@ body{
 
 
 .vizhe {
-    width: 68%;
+    width: 100%;
 }
 
 .popular_articles.alert.alert-primary {
@@ -69,30 +69,30 @@ h1{
 }
 
 .post-subtitle {
-    font-family: 'Sahel Black FD-WOL';
-    color:#012433;
+    font-family: 'Vazirmatn FD';
+    color:#0e2d3a;
+    line-height: 30px;
 }
 
 .post-preview > .post-meta {
     width:100%;
     margin-top: 40px;
     text-align: left;
+    font-family: 'Vazirmatn RD Black';
     font-size: 1.00rem;
     font-style: italic;
-    border:1px dashed #f5f5f5;
 }
 
 .post-preview{
-    border:1px groove #13139c;
-    outline: 3px solid #8a2be2;
+    border: 0.2px solid #b1a9a9;
     padding:19px;
     font-family: 'Sahel Black FD-WOL';
 }
 
 .post-preview > a > .post-title {
     font-size: 1.20rem;
-    font-family: 'Sahel Black FD-WOL';
-    color:#581247;
+    font-family: 'Vazirmatn RD Black';
+    color: #281e1e;
 }
 
 h3, .h3 {
@@ -112,10 +112,8 @@ h3, .h3 {
   }
 
 .mb-4 {
-    margin-top: 6.5rem !important;
-    margin-bottom: 6.5rem !important;
-    border:2px groove #13139c;
-    outline: 3px solid #8a2be2;
+    margin-top: 0rem !important;
+    margin-bottom: 2.5rem !important;
     margin:40px;
   }
 
@@ -135,8 +133,13 @@ li.nav-item > a.nav-link {
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    font-family: 'Sahel Black FD-WOL';
-    color:#081516;
+    font-family: 'Vazirmatn RD Black';
+    color:#1f2527;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+    background-color:rgb(45, 41, 48);
+    color:white;
 }
 
 
@@ -206,16 +209,18 @@ li.nav-item > a.nav-link {
     margin: -5px 10px auto;
 }
 
+#navbarResponsive {
+    margin-top: 3px;
+    margin-left: -25px;
+    margin-right: -24px;
+  }
+
 /*این مربوط به منوهای منه*/
 
 
 .fa {
-    padding: 20px;
-    border-color: #000000 !important;
-    border-width: 1px !important;
     font-size: 40px;
     width: 60px;
-    text-decoration: none;
     margin: 5px 5px;
 }
 
@@ -248,7 +253,6 @@ header.masthead {
 
 /* برای فوتر صفحه */
 .Jumbotron{
-    font-family: 'Sahel';
     font-size: 14pt;
     background-color: #05445E;
 }
