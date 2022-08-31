@@ -134,12 +134,13 @@ li.nav-item > a.nav-link {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
     font-family: 'Vazirmatn RD Black';
-    color:#1f2527;
+    color: #2a150d;
+    transition:0.5s;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-    background-color:rgb(45, 41, 48);
-    color:white;
+    background-color:#d36a14;
+    color:#ffffff;
 }
 
 
@@ -254,16 +255,16 @@ header.masthead {
 /* برای فوتر صفحه */
 .Jumbotron{
     font-size: 14pt;
-    background-color: #05445E;
+    background-color: #326eb6;
 }
 
 .h2{
     font-family: 'Sahel';
-    color:#fc590e;
+    color:#baf72c;
 }
 
 .card{
-    background-color: #cbe4e9;
+    background-color: #00ff7f;
 }
 /* برای فوتر صفحه */
 
