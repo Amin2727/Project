@@ -69,7 +69,7 @@ h1{
 }
 
 .post-subtitle {
-    font-family: 'Vazirmatn FD';
+    font-family: 'Vazirmatn UI FD NL Light';
     color:#0e2d3a;
     line-height: 30px;
 }
@@ -86,7 +86,7 @@ h1{
 .post-preview{
     border: 0.2px solid #b1a9a9;
     padding:19px;
-    font-family: 'Sahel Black FD-WOL';
+    font-family: 'Vazirmatn RD Black';
 }
 
 .post-preview > a > .post-title {
@@ -146,7 +146,7 @@ li.nav-item > a.nav-link {
 
 .px-lg-3 {
     padding-right: 1rem !important;
-    padding-left: 2rem !important;
+    padding-left: 1rem !important;
 } 
 
 

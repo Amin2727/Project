@@ -31,6 +31,10 @@
                     
                     <i class="fa fa-bars"></i>
                 </button>
+                <form class="form-inline mt-3" action="{% url 'blog:search' %}"> 
+                  <input type="search" id="query" style="border-radius:8px; font-family: Vazirmatn RD Black;" class="form-control" name="q" placeholder="جستجو...">
+                  <button class="btn btn-secondary" style="padding: 8px; border-radius: 5px; margin-top: 3px; font-family: Vazirmatn RD Black;">پیدا کن</button>
+                </form>
                 
                  {% category_navbar %}
             </div>
