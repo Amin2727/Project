@@ -2,11 +2,11 @@
 
 {% block header %}
   <div class="popular_articles alert alert-primary" style="font-family: 'Vazirmatn RD Black';">
-    <h3 style="font-family: 'Vazirmatn RD Black';">پست های پر بازدید ماه</h3>
+    <h3 style="font-family: 'Vazirmatn RD Black';">آرشیو پست ها</h3>
         <details>
           <summary>کلیک کنید</summary>
           {% for a in popular_articles %}
-            <div><a href="{% url 'blog:detail' a.slug %}" style="color:#307479"> {{a.title}} </div></a>
+            <div><a href="{% url 'blog:detail' a.slug %}" style="color:#0d131b"> {{a.title}} </div></a>
           {% endfor %}
         </details>
   </div>

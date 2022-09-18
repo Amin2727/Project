@@ -125,21 +125,20 @@ h3, .h3 {
 
 /*این مربوط به منو*/
 li.nav-item > a.nav-link {
-    font-size: 0.72rem;
-    font-weight: 800;
+    font-size: 16px;
+    font-family: 'Vazirmatn RD Black';
     letter-spacing: 0.0625em;
     text-transform: uppercase;
     
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link {
-    font-family: 'Vazirmatn RD Black';
-    color: #2a150d;
+.navbar-light .navbar-nav .nav-link {
+    color: #0a0504;
     transition:0.5s;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-    background-color:#d36a14;
+.navbar-light .navbar-nav .nav-link:hover{
+    background-color:rgb(199, 131, 5);
     color:#ffffff;
 }
 
@@ -189,9 +188,9 @@ li.nav-item > a.nav-link {
   
 .nav ul li ul li {
     display:block;
-    float:none !important;
-    height: auto;
-    line-height: 34px;
+    float:right !important;
+    height: 50px;
+    line-height: 100px;
 }
   
 .nav ul li ul li ul{
@@ -208,6 +207,10 @@ li.nav-item > a.nav-link {
 
 .form {
     margin: -5px 10px auto;
+}
+
+.n {
+    background-color: #84a3c9;
 }
 
 #navbarResponsive {
@@ -264,7 +267,7 @@ header.masthead {
 }
 
 .card{
-    background-color: #00ff7f;
+    background-color: #d5e9df;
 }
 /* برای فوتر صفحه */
 
