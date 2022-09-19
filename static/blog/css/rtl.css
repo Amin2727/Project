@@ -135,6 +135,7 @@ li.nav-item > a.nav-link {
 .navbar-light .navbar-nav .nav-link {
     color: #0a0504;
     transition:0.5s;
+    display: inline;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
@@ -170,7 +171,6 @@ li.nav-item > a.nav-link {
     padding:0 24px;
 }
   
-
   
 .nav a {
     border-bottom: none;
@@ -219,6 +219,15 @@ li.nav-item > a.nav-link {
     margin-right: -24px;
   }
 
+#navbarSupportedContent{
+    margin-top: 30px;
+}
+
+.form-inline.mt-3 {
+    position: fixed;
+    top: -7px;
+    left: 5px;
+}
 /*این مربوط به منوهای منه*/
 
 
