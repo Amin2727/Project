@@ -213,18 +213,13 @@ li.nav-item > a.nav-link {
     background-color: #84a3c9;
 }
 
-#navbarResponsive {
-    margin-top: 3px;
-    margin-left: -25px;
-    margin-right: -24px;
-  }
 
 #navbarSupportedContent{
     margin-top: 30px;
 }
 
 .form-inline.mt-3 {
-    position: fixed;
+    position: absolute;
     top: -7px;
     left: 5px;
 }
