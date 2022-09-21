@@ -46,11 +46,11 @@
                     {{article.jpublish}}
                  <div>
                    {% for cat in article.category.active %}
-                     <a href="{% url 'blog:category' cat.slug %}" style="color:#2b2b38; font-family:Vazirmatn RD Black; text-shadow:1px 3px 2px #4e4e6d">دسته بندی: #{{cat.title}}</a>
+                     <a href="{% url 'blog:category' cat.slug %}" style="color:#2b2b38; font-family:Sahel-Bold; text-shadow:1px 3px 2px #4e4e6d">دسته بندی: #{{cat.title}}</a>
                    {% endfor %}
                  </div>
                  </p>
-                 <div style="font-family:Vazirmatn RD Black; text-shadow:1px 3px 2px #4e4e6d"> بازدیدها:{{article.hits.count}}</div> 
+                 <div style="font-family:Sahel-Bold; text-shadow:1px 3px 2px #4e4e6d"> بازدیدها:{{article.hits.count}}</div> 
              </div>
              <!-- Divider-->
              <hr class="my-4" />
@@ -63,10 +63,10 @@
               {% if is_paginated %}
               <div class="clearfix pager-botton">
                {% if page_obj.has_previous %}
-                 <a class="btn btn-primary float-right ml-3" style="font-family: 'Vazirmatn RD Black';" href="{% block previous_page_url %}{% endblock %}">پست های جدید &rarr;</a>
+                 <a class="btn btn-primary float-right ml-3" style="font-family: 'Sahel-Bold';" href="{% block previous_page_url %}{% endblock %}">پست های جدید &rarr;</a>
                {% endif %}
                {% if page_obj.has_next %}
-               <a class="btn btn-primary float-right" style="font-family: 'Vazirmatn RD Black';" href="{% block next_page_url %}{% endblock %}">پست های قدیمی &larr;</a>
+               <a class="btn btn-primary float-right" style="font-family: 'Sahel-Bold';" href="{% block next_page_url %}{% endblock %}">پست های قدیمی &larr;</a>
                {% endif %}
               </div>
             {% endif %}
