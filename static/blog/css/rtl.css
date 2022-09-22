@@ -1,3 +1,4 @@
+/* فونت ها */
 @font-face {
     font-family: Samim;
     src: url('Samim.eot');
@@ -17,6 +18,7 @@
          url('Sahel-Bold.ttf') format('truetype');
     font-weight: bold;
   }
+/* فونت ها */
 
 /* تنظیمات عمومی سایت*/
 body{
@@ -28,7 +30,7 @@ body{
 }
 
 .search {
-    margin-right: 90px;
+    margin-right: 2px;
     font-family: 'Sahel-Bold';
 }
 
@@ -124,7 +126,7 @@ h3, .h3 {
 /* تنظیمات عمومی سایت*/
 
 
-/*این مربوط به منو*/
+/*این مربوط به منوهای بالای صفحه ست*/
 li.nav-item > a.nav-link {
     font-size: 16px;
     font-family: 'Sahel-Bold';
@@ -211,7 +213,7 @@ li.nav-item > a.nav-link {
 }
 
 .n {
-    background-color: #84a3c9;
+    background-color: #6197d8;
 }
 
 
@@ -224,7 +226,7 @@ li.nav-item > a.nav-link {
     top: -7px;
     left: 5px;
 }
-/*این مربوط به منوهای منه*/
+/*این مربوط به منوهای بالای صفحه ست*/
 
 
 .fa {
@@ -263,16 +265,16 @@ header.masthead {
 /* برای فوتر صفحه */
 .Jumbotron{
     font-size: 14pt;
-    background-color: #326eb6;
+    background-color: #6197d8;
 }
 
 .h2{
-    font-family: 'Sahel';
+    font-family: 'Sahel-Bold';
     color:#baf72c;
 }
 
 .card{
-    background-color: #d5e9df;
+    background-color: #b3d6df;
 }
 /* برای فوتر صفحه */
 
