@@ -9,14 +9,14 @@ from datetime import datetime, timedelta
 
 class ArticleList(ListView):
     queryset = Article.objects.published()
-    paginate_by = 5
+    paginate_by = 10
 
     def get_context_data(self, **kwargs):
        context = super().get_context_data(**kwargs)
        last_month =  datetime.today() - timedelta(days=30)
        context['popular_articles'] = Article.objects.published().annotate(
         count = Count('hits', filter=Q(articlehit__created__gt=last_month))
-       ).order_by('-count', '-publish')[:100]
+       ).order_by('-count', '-publish')[:1000]
        return context
 
 
@@ -71,7 +71,7 @@ class AuthorList(ListView):
 
 
 class SearchList(ListView):
-    paginate_by = 5
+    paginate_by = 10
     template_name = 'blog/search_list.html'
     
     def get_queryset(self):

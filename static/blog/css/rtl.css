@@ -1,11 +1,11 @@
 /* فونت ها */
 @font-face {
     font-family: Samim;
-    src: url('Samim.eot');
-    src: url('Samim.eot?#iefix') format('embedded-opentype'),
-         url('Samim.woff2') format('woff2'),
-         url('Samim.woff') format('woff'),
-         url('Samim.ttf') format('truetype');
+    src: url('Sahel.eot');
+    src: url('Sahel.eot?#iefix') format('embedded-opentype'),
+         url('Sahel.woff2') format('woff2'),
+         url('Sahel.woff') format('woff'),
+         url('Sahel.ttf') format('truetype');
   }
 
 
@@ -24,7 +24,7 @@
 body{
     direction: rtl;
     text-align: right;
-    font-family: 'Samim';
+    font-family: 'Sahel';
     font-size: 16.5px;
     
 }
@@ -56,8 +56,8 @@ body{
 }
 
 .popular_articles.alert.alert-primary {
-    width: 100%;
-    margin-right: -2px;
+    width: 94%;
+    margin-right: 30px;
 }
 
 h1{
@@ -72,7 +72,7 @@ h1{
 }
 
 .post-subtitle {
-    font-family: 'Vazirmatn UI FD NL Light';
+    font-family: 'Sahel';
     color:#0e2d3a;
     line-height: 30px;
 }
@@ -90,6 +90,7 @@ h1{
     border: 0.2px solid #b1a9a9;
     padding:19px;
     font-family: 'Sahel-Bold';
+    margin:30px;
 }
 
 .post-preview > a > .post-title {
@@ -123,6 +124,7 @@ h3, .h3 {
 .SVG{
     enable-background:new 0 0 352.62 352.62
 }
+
 /* تنظیمات عمومی سایت*/
 
 
@@ -213,7 +215,7 @@ li.nav-item > a.nav-link {
 }
 
 .n {
-    background-color: #6197d8;
+    background-color: #58c5e0;
 }
 
 
@@ -265,16 +267,12 @@ header.masthead {
 /* برای فوتر صفحه */
 .Jumbotron{
     font-size: 14pt;
-    background-color: #6197d8;
-}
-
-.h2{
-    font-family: 'Sahel-Bold';
-    color:#baf72c;
+    background-color: #58c5e0;
+    padding:2px;
 }
 
 .card{
-    background-color: #b3d6df;
+    background-color: #58c5e0;
 }
 /* برای فوتر صفحه */
 
